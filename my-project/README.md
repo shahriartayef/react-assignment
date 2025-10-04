@@ -1,16 +1,16 @@
-# React + Vite
+1)JSX (JavaScript XML) is a syntax extension for JavaScript used in React to describe the UI structure. It allows you to write HTML-like code inside JavaScript. It's used to make React components more readable and easier to write.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+2)State: Data that is managed within a component and can change over time. It’s mutable and can trigger re-renders.
+Props: Short for "properties", they are passed to a component by its parent and are read-only. They are used to pass data from one component to another.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+3)The useState hook is used to add state to functional components. It returns an array with the current state and a function to update it. It works by initializing the state with a value and allows updates that trigger re-renders of the component.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+4)Lift State Up: Move the state to the nearest common ancestor and pass it down as props.
+Context API: Use the Context API to share state across components without prop drilling.
+State Management Libraries: Use libraries like Redux for global state management.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+5)Event handling in React is done by passing functions as event handlers to elements. The function is triggered when the event occurs. React uses camelCase for event names, like onClick, onChange, etc.
